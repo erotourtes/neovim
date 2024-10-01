@@ -30,7 +30,7 @@ vim.o.pumblend = G.const.default_winblend
 
 vim.opt.laststatus = 3 -- Set global status line
 
-vim.opt.fillchars:append { diff = "╱" }
+vim.opt.fillchars:append({ diff = "╱" })
 
 local autocmd = vim.api.nvim_create_autocmd
 
@@ -120,3 +120,4 @@ local default_plugins = {
 for _, plugin in pairs(default_plugins) do
   vim.g["loaded_" .. plugin] = 1
 end
+
